@@ -1,0 +1,9 @@
+# Build output and editor files never belong in the image.
+**/bin/Debug
+**/obj
+*.user
+.git
+
+# Logs are excluded, except the sample the installer ships.
+logs
+!logs/sample.log

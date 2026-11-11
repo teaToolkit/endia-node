@@ -1,0 +1,40 @@
+// The public surface of the endia package: the client, its route groups and options, the errors, and the API's records.
+export { EastIndiaClient, type ClientOptions } from "./eastindia-client.js";
+export { EastIndiaApiError, EastIndiaConnectionError, MachineFailedError, type ConnectionFailure } from "./errors.js";
+export { readTlsFolder } from "./environment.js";
+export { resolveComposeModel, type ComposeProjectOptions, type ResolvedComposeModel } from "./compose-model.js";
+export type { TlsFiles } from "./transport/tls-files.js";
+
+export { ArchivesClient, type MachineArchive } from "./groups/archives.js";
+export { BasesClient } from "./groups/bases.js";
+export { CertificatesClient } from "./groups/certificates.js";
+export { DesktopClient, type DesktopScreenshot } from "./groups/desktop.js";
+export { ExecsClient, type DetachedExec, type ExecResult, type RunOptions } from "./groups/execs.js";
+export { FleetsClient, type FleetArchive, type FleetServicesOptions, type FleetUpOptions, type FleetWaitOptions } from "./groups/fleets.js";
+export { ImagesClient, type ArchiveContext, type BuildOptions, type FolderContext } from "./groups/images.js";
+export { MachinesClient, type LogOptions } from "./groups/machines.js";
+export { isFinished, OperationHandle, OperationsClient, type OperationLogOptions, type OperationWaitOptions } from "./groups/operations.js";
+export { ProcessesClient, type ProcessIdentity } from "./groups/processes.js";
+export { StatsClient, type StatsOptions } from "./groups/stats.js";
+export { SystemClient } from "./groups/system.js";
+export { VolumesClient } from "./groups/volumes.js";
+export { MaxPurposeDetailBytes } from "./purposes.js";
+export { ExecSession } from "./exec/exec-session.js";
+export type { ComposeModel, ComposeService } from "./contract/compose.js";
+
+export type * from "./contract/archives.js";
+export type * from "./contract/bases.js";
+export type * from "./contract/clients.js";
+export type * from "./contract/common.js";
+export type * from "./contract/desktop.js";
+export type * from "./contract/execs.js";
+export type * from "./contract/fleets.js";
+export type * from "./contract/images.js";
+export type * from "./contract/machines.js";
+export type * from "./contract/operations.js";
+export type * from "./contract/processes.js";
+export type * from "./contract/purposes.js";
+export type * from "./contract/space.js";
+export type * from "./contract/stats.js";
+export type * from "./contract/status.js";
+export type * from "./contract/volumes.js";
