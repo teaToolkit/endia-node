@@ -127,14 +127,6 @@ export interface HostConfigurationView {
 	readonly clientCertificateValidityDays: number;
 	/** The `evaluationWarningDays` key in effect. */
 	readonly evaluationWarningDays: number;
-	/** The `hyperVAccessFolder` key in effect, or null when it is not set. */
-	readonly hyperVAccessFolder: string | null;
-	/** The `hyperVEndpoint` key in effect, or null when it is not set. */
-	readonly hyperVEndpoint: string | null;
-	/** The `hostPathMap` key in effect, or null when it is not set. */
-	readonly hostPathMap: string | null;
-	/** The `guestRelay` key in effect, or null when it is not set. */
-	readonly guestRelay: string | null;
 	/** The `hyperVRequestTimeoutSeconds` key in effect. */
 	readonly hyperVRequestTimeoutSeconds: number;
 	/** The `hyperVJobTimeoutSeconds` key in effect. */
