@@ -79,6 +79,8 @@ export interface HostConfigurationView {
 	readonly machineProcessorCount: number;
 	/** The `maxLayerDepth` key in effect. */
 	readonly maxLayerDepth: number;
+	/** The `buildCacheKeepGiB` key in effect. */
+	readonly buildCacheKeepGiB: number;
 	/** The `maxParallelBoots` key in effect. */
 	readonly maxParallelBoots: number;
 	/** The `guestConnectTimeoutSeconds` key in effect. */
@@ -117,6 +119,8 @@ export interface HostConfigurationView {
 	readonly operationRetentionDays: number;
 	/** The `idempotencyRetentionHours` key in effect. */
 	readonly idempotencyRetentionHours: number;
+	/** The `purposeHistoryMaxEntries` key in effect. */
+	readonly purposeHistoryMaxEntries: number;
 	/** The `serviceLogRetentionDays` key in effect. */
 	readonly serviceLogRetentionDays: number;
 	/** The `retentionSweepMinutes` key in effect. */

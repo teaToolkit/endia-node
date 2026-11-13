@@ -70,6 +70,8 @@ export interface ProcessStopResult {
 	readonly exitCode: number | null;
 	/** How it ended: `closed`, `ended` or `alreadyExited`. */
 	readonly how: string;
+	/** The processes the service ended besides the one named when a stop covers the whole process tree, deepest first. The service does this only when asked with `tree=true`, which `ProcessesClient.stop` does not send, so the list is empty. */
+	readonly endedDescendants: readonly ProcessSummary[];
 }
 
 /** One line of what a process started by `endia exec -d` wrote, as `process logs` streams it, one JSON object per line of `application/x-ndjson`. */

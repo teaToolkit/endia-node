@@ -16,6 +16,10 @@ export interface HostStats {
 	readonly memoryReserveBytes: number;
 	/** The memory that every running virtual machine EastIndia owns started with. */
 	readonly machinesMemoryBytes: number;
+	/** The bytes all the host's physical disks read and wrote each second, counted together, during the last interval of the service's readings; the machines' disk files are on these disks, so their traffic is part of it. Null when not taken, as before the service has read the counters twice. */
+	readonly diskBytesPerSecond: number | null;
+	/** The bytes all the host's physical network adapters received and sent each second, counted together, during the last interval of the service's readings; the host's own virtual adapters are not counted. Null when not taken. */
+	readonly networkBytesPerSecond: number | null;
 	/** Each reading that is null, with the reason. */
 	readonly unavailable: readonly UnavailableReading[];
 }
