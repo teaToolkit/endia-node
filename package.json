@@ -1,6 +1,6 @@
 {
 	"name": "endia",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Client for EastIndia, which runs Windows desktop test machines that tests drive like Docker containers. Early preview.",
 	"license": "MIT",
 	"author": "teaToolkit",
